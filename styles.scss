@@ -1,0 +1,109 @@
+body{
+background: #ffffff;
+color: gray;
+// font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+line-height: 1.5;
+text-align: justify;
+}
+$colortext:#0081cc;
+
+.clearfix{
+	content: "";
+	display: block;
+	visibility: none;
+	clear: both;
+}
+.lsm{
+	margin-right: 0!important;
+}
+.tab-items{
+	width: 740px;
+			font-family: Meiryo UI;
+			cursor: pointer;
+			padding-top: 30px;
+			color: #717171;
+			.active{
+				color: $colortext!important;
+				z-index: 2!important;
+				text-decoration: none!important;
+				border-bottom-color:#ffffff!important; 
+				.btn-name{
+				background: #ffffff!important;
+					
+				}
+				img{
+					// display: block;
+					visibility: hidden;
+				}
+			}
+			.tab-control{
+				// line-height: 24px;
+				position: relative;
+				&:after{
+					position: absolute;
+				 	 content: "";
+				 	 width: 100%;
+				 	 bottom: 0;
+				 	 left: 0;
+					 border-bottom: 1px solid #AAA;
+				  	 z-index: 1;
+				}
+				&:before{
+					z-index: 1;
+
+				}
+				.button{
+					position: relative;
+					z-index: 0;
+					float: left;
+					color: gray;
+					width: 25%;
+					text-decoration: underline;
+					font-size: 12px;
+					.btn-name{
+						background: #efefef;
+						padding: 15px 0px;
+						border: 1px solid #bcbcbc;
+						margin:0 4px;
+						border-radius: 5px 5px 0 0;
+						border-bottom: 0px;
+						
+						img{
+							margin: 0 17px 0 11px;
+						}
+						&:first-child{
+							margin-left: 0px;
+						}
+					}
+					
+				}
+
+			}
+			.tab-content{
+				padding: 1px 20px;
+				font-size: 12px;
+				border: 1px solid #bcbcbc;
+				border-top:none;
+				.tab{
+					display: none;
+					ul{
+						li{
+							list-style: none;
+							padding: 15px 0;
+							border-bottom: 1px dotted #bcbcbc;
+							text-decoration: underline;
+							&:last-child{
+								border-bottom: none;
+								}
+							img{
+								padding-right: 5px;
+							}
+							&:first-child{
+								padding-top: 21px;
+							}
+						}
+					}
+				}
+
+			}
+		}
